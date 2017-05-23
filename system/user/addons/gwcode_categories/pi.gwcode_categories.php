@@ -39,7 +39,7 @@ class Gwcode_categories {
 	private $min_depth_in_output = 1; // this will store the lowest depth number in the final output
 
 	public function __construct() {
-		$this->EE =& get_instance();
+		$this->EE = ee();
 
 		// start: fetch & validate plugin params
 		$this->site_id = $this->EE->TMPL->fetch_param('site_id', 1);
